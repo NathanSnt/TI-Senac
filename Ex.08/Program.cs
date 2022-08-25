@@ -8,7 +8,7 @@ namespace Ex._08
         static void Main(string[] args)
         {
             /*
-            Faça um programa que calcule a área de um terreno retângular e leia o preços por metro² e informe o valor do terreno
+            Faça um programa que calcule a área de um terreno retângular, leia o preço do metro² e informe o valor do terreno.
              */
             Console.WriteLine("*** CALCULADORA DE VALOR DE TERRENO RETANGULAR ***");
             Console.Write("Informe o comprimento do terreno: ");
