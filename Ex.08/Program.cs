@@ -10,6 +10,9 @@ namespace Ex._08
             /*
             Faça um programa que calcule a área de um terreno retângular, leia o preço do metro² e informe o valor do terreno.
              */
+            Console.BackgroundColor = ConsoleColor.Black; // Fundo preto
+            Console.ForegroundColor = ConsoleColor.Green; // Letras verdes
+
             Console.WriteLine("*** CALCULADORA DE VALOR DE TERRENO RETANGULAR ***");
             Console.Write("Informe o comprimento do terreno: ");
             float comprimento = float.Parse(Console.ReadLine());
@@ -18,6 +21,7 @@ namespace Ex._08
             Console.Write("Informe a largura do terreno: ");
             float largura = float.Parse(Console.ReadLine());
             Console.Beep();
+            
 
             if (comprimento != largura) // Caso o terreno seja retangular.
             {
@@ -39,7 +43,9 @@ namespace Ex._08
             else // Caso o terreno seja quadrado.
             {
                 Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("O terreno tem que ser retangular!");
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.Beep();
                 Console.Beep();
                 Console.Beep();
