@@ -16,6 +16,10 @@ namespace Ex._10
             {
                 Console.WriteLine($"O número {num} é negativo!");
             }
+            else if (num == 0)
+            {
+                Console.WriteLine("0 é um número neutro!");
+            }
             else
             {
                 Console.WriteLine($"O número {num} é positivo!");
