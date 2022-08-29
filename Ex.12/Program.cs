@@ -141,6 +141,21 @@ namespace Ex._12
             var b = 5;
 
             Console.WriteLine(ativo == true);
+
+            Console.WriteLine("\nOperador lógico E: ");
+            Console.WriteLine($"{a} maior que 2 E {b} maior que 4: {a > 2 && b > 4}"); // A = V  B = V ** Retorna True
+            Console.WriteLine($"{a} maior que 4 E {b} maior que 4: {a > 4 && b > 4}"); // A = F  B = V ** Retorna False
+            Console.WriteLine($"{a} maior que 2 E {b} maior que 6: {a > 2 && b > 6}"); // A = V  B = F ** Retorna False
+            Console.WriteLine($"{a} maior que 4 E {b} maior que 6: {a > 4 && b > 6}"); // A = F  B = F ** Retorna False
+                                            
+            Console.WriteLine("\nOperador lógico OU: ");
+            Console.WriteLine($"{a} maior que 2 OU {b} maior que 4: {a > 2 || b > 4}"); // A = V  B = V ** Retorna True
+            Console.WriteLine($"{a} maior que 4 OU {b} maior que 4: {a > 4 || b > 4}"); // A = F  B = V ** Retorna True
+            Console.WriteLine($"{a} maior que 2 OU {b} maior que 6: {a > 2 || b > 6}"); // A = V  B = F ** Retorna True
+            Console.WriteLine($"{a} maior que 4 OU {b} maior que 6: {a > 4 || b > 6}"); // A = F  B = F ** Retorna False
+
+            Console.WriteLine("\nOperador lógico NOT: ");
+            Console.WriteLine($"NÃO {a} diferente de {b}: {!(a != b)}");
         }
     } 
 }
